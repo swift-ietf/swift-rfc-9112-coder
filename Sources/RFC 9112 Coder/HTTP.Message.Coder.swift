@@ -1,6 +1,6 @@
 public import Byte
-import Byte_Standard_Library_Integration
-import Cursor_Standard_Library_Integration
+import Byte
+import Cursor
 public import RFC_9110
 public import RFC_9112
 

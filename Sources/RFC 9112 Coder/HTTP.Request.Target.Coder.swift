@@ -1,9 +1,10 @@
 public import Byte
-import Byte_Standard_Library_Integration
+import Byte
 public import Coder
 public import Cursor
-public import Cursor_Standard_Library_Integration
+public import Cursor
 public import RFC_3986
+import RFC_3986_Coder
 public import RFC_9110
 public import RFC_9112
 import Parser
@@ -111,7 +112,9 @@ extension RFC_9112.Request.Target {
             return uri.value
 
         case .authority(let authority):
-            return authority.rawValue
+            var bytes: [Byte] = []
+            RFC_3986.URI.Authority.serialize(authority, into: &bytes)
+            return Scanning.text(bytes)
 
         case .asterisk:
             return "*"

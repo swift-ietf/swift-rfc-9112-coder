@@ -1,7 +1,7 @@
 import Byte
-import Byte_Standard_Library_Integration
+import Byte
 import Cursor
-import Cursor_Standard_Library_Integration
+import Cursor
 
 enum Scanning {
 
