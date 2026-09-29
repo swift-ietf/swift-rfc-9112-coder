@@ -21,7 +21,7 @@ let package = Package(
         .package(url: "https://github.com/swift-atoms/swift-byte.git", branch: "main"),
         .package(url: "https://github.com/swift-atoms/swift-coder.git", branch: "main", traits: ["Checkpoint", "Choice", "Either", "IteratorLeaves", "Map", "Pair", "Predicate", "Repetition", "Skip"]),
         .package(url: "https://github.com/swift-atoms/swift-cursor.git", branch: "main"),
-        .package(url: "https://github.com/swift-atoms/swift-parser.git", branch: "main", traits: ["Always", "Append", "Choice", "Either", "FlatMap", "IteratorLeaves", "Map", "Pair", "Predicate", "Product", "Repetition", "Skip"]),
+        .package(url: "https://github.com/swift-atoms/swift-parser.git", branch: "main", traits: ["Always", "Append", "Choice", "Either", "FlatMap", "IteratorLeaves", "Map", "Pair", "Predicate", "Product", "Repetition", "Skip", "Iterator"]),
         .package(url: "https://github.com/swift-atoms/swift-serializer.git", branch: "main", traits: ["Either", "Map", "Pair", "Repetition"]),
         .package(url: "https://github.com/swift-ietf/swift-rfc-3986.git", branch: "main"),
         .package(url: "https://github.com/swift-ietf/swift-rfc-3986-coder.git", branch: "main"),
