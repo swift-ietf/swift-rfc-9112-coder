@@ -53,5 +53,3 @@ extension RFC_9112.Transfer.Encoding {
         case malformed
     }
 }
-
-extension RFC_9112.Transfer.Encoding: Coder.Codable {}

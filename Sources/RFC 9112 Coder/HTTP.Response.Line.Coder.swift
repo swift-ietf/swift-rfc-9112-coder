@@ -80,5 +80,3 @@ extension RFC_9112.Response.Line {
         case statusOutOfRange(Int)
     }
 }
-
-extension RFC_9112.Response.Line: Coder.Codable {}

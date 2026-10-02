@@ -53,8 +53,6 @@ extension RFC_9112.Request.Target {
     }
 }
 
-extension RFC_9112.Request.Target: Coder.Codable {}
-
 extension RFC_9112.Request.Target {
 
     init(_ text: String, method: RFC_9110.Method) throws(Failure) {

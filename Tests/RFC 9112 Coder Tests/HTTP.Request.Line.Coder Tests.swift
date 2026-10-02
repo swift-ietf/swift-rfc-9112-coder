@@ -25,7 +25,7 @@ struct `HTTP.Request.Line.Coder Tests` {
         let line = try RFC_9112.Request.Line.coder.parse(&input)
 
         var buffer: [Byte] = []
-        try line.encode(into: &buffer)
+        try RFC_9112.Request.Line.coder.serialize(line, into: &buffer)
 
         #expect(text(buffer) == "POST /orders HTTP/1.1")
     }
@@ -38,7 +38,7 @@ struct `HTTP.Request.Line.Coder Tests` {
         #expect(line.target == .asterisk)
 
         var buffer: [Byte] = []
-        try line.encode(into: &buffer)
+        try RFC_9112.Request.Line.coder.serialize(line, into: &buffer)
         #expect(text(buffer) == "OPTIONS * HTTP/1.1")
     }
 

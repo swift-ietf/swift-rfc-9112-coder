@@ -83,5 +83,3 @@ extension RFC_9112.Request.Line {
         case version(RFC_9112.Version.Error)
     }
 }
-
-extension RFC_9112.Request.Line: Coder.Codable {}

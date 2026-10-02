@@ -124,5 +124,3 @@ extension RFC_9112.Request.Head.Error {
         }
     }
 }
-
-extension RFC_9112.Request.Head: Coder.Codable {}

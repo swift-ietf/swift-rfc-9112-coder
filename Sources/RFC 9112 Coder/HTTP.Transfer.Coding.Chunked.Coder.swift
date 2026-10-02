@@ -125,7 +125,7 @@ extension RFC_9112.Transfer.Coding.Chunked {
     public static var coder: Coder<ArraySlice<Byte>, [Byte]> { .init() }
 }
 
-extension RFC_9112.Transfer.Coding.Chunked.Result: Coder.Codable {
+extension RFC_9112.Transfer.Coding.Chunked.Result {
 
     public static var coder: RFC_9112.Transfer.Coding.Chunked.Coder<ArraySlice<Byte>, [Byte]> {
         RFC_9112.Transfer.Coding.Chunked.coder

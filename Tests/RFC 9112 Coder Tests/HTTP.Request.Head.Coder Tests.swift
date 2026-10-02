@@ -29,7 +29,7 @@ struct `HTTP.Request.Head.Coder Tests` {
         let head = try RFC_9112.Request.Head.coder.parse(&input)
 
         var buffer: [Byte] = []
-        try head.encode(into: &buffer)
+        try RFC_9112.Request.Head.coder.serialize(head, into: &buffer)
 
         #expect(text(buffer) == source)
     }
@@ -82,7 +82,7 @@ struct `HTTP.Response.Head.Coder Tests` {
         let head = try RFC_9112.Response.Head.coder.parse(&input)
 
         var buffer: [Byte] = []
-        try head.encode(into: &buffer)
+        try RFC_9112.Response.Head.coder.serialize(head, into: &buffer)
 
         #expect(text(buffer) == source)
     }

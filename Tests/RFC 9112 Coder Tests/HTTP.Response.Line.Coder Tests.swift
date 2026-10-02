@@ -25,7 +25,7 @@ struct `HTTP.Response.Line.Coder Tests` {
         let line = try RFC_9112.Response.Line.coder.parse(&input)
 
         var buffer: [Byte] = []
-        try line.encode(into: &buffer)
+        try RFC_9112.Response.Line.coder.serialize(line, into: &buffer)
 
         #expect(text(buffer) == "HTTP/1.1 404 Not Found")
     }
@@ -38,7 +38,7 @@ struct `HTTP.Response.Line.Coder Tests` {
         #expect(line.reason == nil)
 
         var buffer: [Byte] = []
-        try line.encode(into: &buffer)
+        try RFC_9112.Response.Line.coder.serialize(line, into: &buffer)
         #expect(text(buffer) == "HTTP/1.1 204")
     }
 

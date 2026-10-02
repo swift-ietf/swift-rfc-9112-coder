@@ -21,7 +21,7 @@ struct `HTTP.Connection.Coder Tests` {
         let connection = try RFC_9112.Connection.coder.parse(&input)
 
         var buffer: [Byte] = []
-        try connection.encode(into: &buffer)
+        try RFC_9112.Connection.coder.serialize(connection, into: &buffer)
 
         #expect(text(buffer) == "keep-alive, upgrade")
     }

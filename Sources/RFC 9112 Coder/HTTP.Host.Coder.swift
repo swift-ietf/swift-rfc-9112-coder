@@ -58,8 +58,6 @@ extension RFC_9112.Host {
     }
 }
 
-extension RFC_9112.Host: Coder.Codable {}
-
 extension RFC_9112.Host {
 
     public init(text: String) throws(Failure) {

@@ -47,7 +47,7 @@ struct `HTTP.Transfer.Coding.Chunked.Coder Tests` {
         )
 
         var buffer: [Byte] = []
-        try result.encode(into: &buffer)
+        try RFC_9112.Transfer.Coding.Chunked.Result.coder.serialize(result, into: &buffer)
         #expect(text(buffer) == "5\r\nhello\r\n0\r\n\r\n")
 
         var input = buffer[...]

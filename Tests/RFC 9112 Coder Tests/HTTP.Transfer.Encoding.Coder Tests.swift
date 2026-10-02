@@ -24,7 +24,7 @@ struct `HTTP.Transfer.Encoding.Coder Tests` {
         #expect(encoding.isChunkedFinal)
 
         var buffer: [Byte] = []
-        try encoding.encode(into: &buffer)
+        try RFC_9112.Transfer.Encoding.coder.serialize(encoding, into: &buffer)
         #expect(text(buffer) == "gzip, chunked")
     }
 

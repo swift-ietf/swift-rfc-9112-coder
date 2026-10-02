@@ -52,5 +52,3 @@ extension RFC_9112.Connection {
         case malformed
     }
 }
-
-extension RFC_9112.Connection: Coder.Codable {}
