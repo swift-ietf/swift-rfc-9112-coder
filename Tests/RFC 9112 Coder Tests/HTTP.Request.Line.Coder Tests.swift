@@ -46,7 +46,7 @@ struct `HTTP.Request.Line.Coder Tests` {
     func `a line without a version is rejected`() {
         var input = bytes("GET /")[...]
 
-        #expect(throws: (any Swift.Error).self) {
+        #expect(throws: (any Swift::Error).self) {
             try RFC_9112.Request.Line.coder.parse(&input)
         }
     }

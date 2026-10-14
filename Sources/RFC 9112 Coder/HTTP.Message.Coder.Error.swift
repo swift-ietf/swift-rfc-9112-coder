@@ -2,7 +2,7 @@ public import RFC_9112
 
 extension RFC_9112.Message.Coder {
 
-    public enum Error: Swift.Error, Equatable {
+    public enum Error: Swift::Error, Equatable {
 
         case bareCarriageReturn
 

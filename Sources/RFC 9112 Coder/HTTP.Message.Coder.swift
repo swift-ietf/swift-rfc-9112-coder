@@ -1,5 +1,4 @@
 public import Byte
-import Byte
 import Cursor
 public import RFC_9110
 public import RFC_9112

@@ -34,7 +34,7 @@ extension RFC_9112.Connection.Server.Coder {
         case end(RFC_9110.Message.Trailers)
     }
 
-    public enum Error: Swift.Error, Equatable {
+    public enum Error: Swift::Error, Equatable {
 
         case message(RFC_9112.Message.Coder.Error)
 

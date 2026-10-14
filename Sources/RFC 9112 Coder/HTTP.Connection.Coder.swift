@@ -1,9 +1,8 @@
 public import Byte
-import Byte
 public import Coder
 public import Cursor
 public import Cursor
-public import RFC_9110
+import RFC_9110
 import RFC_9110_Coder
 public import RFC_9112
 import Parser
@@ -46,7 +45,7 @@ extension RFC_9112.Connection {
 
     public static var coder: Coder<ArraySlice<Byte>, [Byte]> { .init() }
 
-    public enum Error: Swift.Error, Equatable {
+    public enum Error: Swift::Error, Equatable {
 
         case empty
 

@@ -92,7 +92,7 @@ struct `HTTP.Host.Coder Tests` {
             headers: [try RFC_9110.Field(name: "Host", value: "example.org")]
         )
 
-        #expect(throws: (any Swift.Error).self) {
+        #expect(throws: (any Swift::Error).self) {
             try request.host
         }
     }

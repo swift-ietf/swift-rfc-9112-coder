@@ -1,9 +1,8 @@
 public import Byte
-import Byte
 public import Coder
 public import Cursor
 public import Cursor
-public import RFC_9110
+import RFC_9110
 public import RFC_9112
 import Parser
 import Serializer

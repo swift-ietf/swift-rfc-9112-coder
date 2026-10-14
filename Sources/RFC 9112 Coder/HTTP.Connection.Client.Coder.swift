@@ -39,7 +39,7 @@ extension RFC_9112.Connection.Client.Coder {
         case tunnel
     }
 
-    public enum Error: Swift.Error, Equatable {
+    public enum Error: Swift::Error, Equatable {
 
         case message(RFC_9112.Message.Coder.Error)
 

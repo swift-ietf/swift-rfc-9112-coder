@@ -7,7 +7,7 @@ import RFC_9112
 
 enum Framing {
 
-    enum Error: Swift.Error, Equatable {
+    enum Error: Swift::Error, Equatable {
 
         case transferEncoding(String)
 
