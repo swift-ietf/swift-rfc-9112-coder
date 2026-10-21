@@ -1,18 +1,16 @@
 public import Byte
 public import Coder
 public import Cursor
-public import Cursor
+import Parser
 import RFC_3986
 import RFC_3986_Coder
 public import RFC_9110
 public import RFC_9112
-import Parser
 import Serializer
 
 extension RFC_9112.Request.Target {
 
     public struct Coder<Input: Cursor.`Protocol`<Byte, Never>, Buffer: RangeReplaceableCollection<Byte>>: Coding {
-
 
         public typealias Output = RFC_9112.Request.Target
 

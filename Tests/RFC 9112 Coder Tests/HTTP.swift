@@ -1,5 +1,4 @@
 import Byte
-import Byte
 
 func bytes(_ text: String) -> [Byte] {
     [Byte](utf8: text)

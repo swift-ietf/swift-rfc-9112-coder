@@ -1,16 +1,14 @@
 public import Byte
 public import Coder
 public import Cursor
-public import Cursor
+import Parser
 import RFC_9110
 public import RFC_9112
-import Parser
 import Serializer
 
 extension RFC_9112.Transfer.Coding.Chunked {
 
     public struct Coder<Input: Cursor.`Protocol`<Byte, Never>, Buffer: RangeReplaceableCollection<Byte>>: Coding {
-
 
         public typealias Output = RFC_9112.Transfer.Coding.Chunked.Result
 
